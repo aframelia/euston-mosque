@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Bootstrap Theme Company Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="js/jquery-2.1.0.min.js"></script>
+  <script src="js/jquery-2.1.4.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script type='text/javascript' src='js/moment.min.js'></script>
+  <script type ="text/javascript" src="js/bootstrap.min.js"></script>
+  <script src="js/app.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a href="#home"><img src="images/mosque.svg"" class="img-rounded logo" alt="Home width="70" height="53"></a>
+      <a href="#home">Shah Jalal Masjid</a>
+    </div>
+    <div class="collapse navbar-collapse " id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#prayertimes">PRAYER TIMES</a></li>
+        <li class="dropdown"><a href="#activities">ACTIVITIES<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="childrenmadrassa.html">Children's Madrassa</a></li>
+            <li><a href="#">Weekly Lectures</a></li>
+            <li><a href="#">Congregational Prayers</a></li>
+          </ul>
+        </li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div id="home" class="jumbotron text-center bg-islamicPattern">
+  <h1>Company</h1> 
+  <p>We specialize in blablabla</p> 
+</div>
+
+<!-- Container (About Section) -->
+<div id="prayertimes" class="container-fluid bg-grey">
+      
+  <div class="row">   
+
+    <div class="text-center col-sm-6">
+      <h2>Daily Prayers</h2>
+      <img src="images/takbir.svg"" class="img-rounded prayertimeimgs" alt="Home width="70" height="53">
+      <div class="table-responsive ">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Prayer</th>
+            <th>Start</th>
+            <th>Jama'a</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+      </div>
+      <br>
+      <button class="btn btn-default btn-lg"><span class="glyphicon glyphicon-save"></span> Download Prayer Times</button>
+    </div> 
+
+    <div class="text-center col-sm-6">
+      <h2>Other Prayers</h2>
+      <div class="talk-bubble tri-right border right-in">
+        <div class="talktext">
+          <h4>Jummuah Times!</h4>
+          <p>First: 1:15pm</p>
+          <p>Second: 1:50pm</p>
+        </div>
+       </div>
+
+      <img src="images/muslim.svg"" class="img-rounded prayertimeFridayimg" alt="Home width="70" height="53">
+    </div>  
+  </div> 
+</div>
+
+<!-- Container (Activities Section) -->
+<div id="activities" class="container-fluid text-center">
+  <h2>ACTIVITIES</h2>
+  <br>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+        <a data-toggle="modal" class="" data-target="#myModal">
+         <img src="images/muslim-man.svg"" class="img-rounded prayertimeimgs" alt="Home width="70" height="53">
+         <h4>Children's Madrassa</h4>
+        </a>
+        <span class="cd-modal-bg"></span>
+      <p>Lorem ipsum dolor sit amet..</p>
+      <div id="myModal" class="modal fade" role="dialog">
+          <div class="modal-dialog modal-lg">
+           <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Children's Madrassa</h4>
+            </div>
+            <div class="modal-body">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non ipsum repudiandae sequi ut optio reiciendis consectetur, cum, a provident, iusto quod esse, perferendis iure iste! Quidem itaque, exercitationem aliquam, mollitia recusandae repellat dolores quibusdam minima quae reprehenderit ut, reiciendis officia.</p>
+
+            </div>
+           </div>
+          </div>
+      
+      </div>     
+     </div>
+    <div class="col-sm-4">
+      <img src="images/reading-quran.svg"" class="img-rounded prayertimeimgs" alt="Home width="70" height="53">
+      <h4>Weekly Lectures</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div>
+    <div class="col-sm-4">
+      <img src="images/muslim-praying.svg"" class="img-rounded prayertimeimgs" alt="Home width="70" height="53">
+      <h4>Congregational Prayers</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div>
+  </div>
+  <br>
+</div>
+  
+
+<!-- Container (Pricing Section) -->
+<div id="about" class="container-fluid text-center bg-grey">
+
+    <h2>About Shah Jalal Masjid</h2>
+
+  <div class="row slideanim">
+
+    <div class="col-sm-6">
+
+      <a data-toggle="modal" data-target="#myModal">
+        <img src="images/staff.svg"" class="img-rounded prayertimeimgs" alt="Home width="70" height="53">
+        <h4>About our staff</h4>
+      </a>
+        <p>Everithing you want to know about our staff</p>
+      <div class="container">
+         <div id="myModal" class="modal fade" role="dialog">
+          <div class="modal-dialog modal-lg">
+           <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">About our satff</h4>
+            </div>
+            <div class="modal-body">
+            <div class="row">
+                <div class="member1">
+                   <div class="col-sm-5">
+                    <img src="images/im1.jpg" class="user">
+                   </div>
+                   <div class="col-sm-7">
+                    <h4>Imam Said Kamili: Imam of Shah Jalal Masjid</h4>
+                    <p>kjfhkfdhdfhfheoifhwekfjbewkfhoihfqekbfwkjvbewb,msdvbjgkbvvhearkjvbjiwrlahjeargvhekrajgbherhguirh</p>
+                   </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="member2">
+                   <div class="col-sm-5">
+                    <img src="images/im2.jpg" class="user">
+                   </div>
+                   <div class="col-sm-7">
+                    <h4>Imam Said Kamili: Imam of Shah Jalal Masjid</h4>
+                    <p>kjfhkfdhdfhfheoifhwekfjbewkfhoihfqekbfwkjvbewb,msdvbjgkbvvhearkjvbjiwrlahjeargvhekrajgbherhguirh</p>
+                   </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="member3">
+                   <div class="col-sm-5">
+                    <img src="images/im3.jpg" class="user">
+                   </div>
+                   <div class="col-sm-7">
+                    <h4>Imam Said Kamili: Imam of Shah Jalal Masjid</h4>
+                    <p>kjfhkfdhdfhfheoifhwekfjbewkfhoihfqekbfwkjvbewb,msdvbjgkbvvhearkjvbjiwrlahjeargvhekrajgbherhguirh</p>
+                   </div>
+                </div>                
+            </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+           </div>
+          </div>
+         </div>
+      </div>
+    </div>
+
+    <div class="col-sm-6"> 
+    <a data-toggle="modal" data-target="#myModal">
+    <img src="images/mosque1.svg"" class="img-rounded prayertimeimgs" alt="Home width="70" height="53">
+    <h4>About our Masjid</h4>
+    </a>
+    <p>Everithing you want to know about our masjid</p>
+    <div class="container">
+         
+         <div id="myModal" class="modal fade" role="dialog">
+          <div class="modal-dialog modal-lg">
+           <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">About our masjid</h4>
+            </div>
+            <div class="modal-body">
+              <section class="cd-horizontal-timeline">
+                  <div class="timeline">
+                    <div class="events-wrapper">
+                      <div class="events">
+                        <ol>
+                          <li><a href="#0" data-date="16/01/2014" class="selected">16 Jan</a></li>
+                          <li><a href="#0" data-date="28/02/2014">28 Feb</a></li>
+                          <li><a href="#0" data-date="20/04/2014">20 Mar</a></li>
+                          <li><a href="#0" data-date="20/05/2014">20 May</a></li>
+                          <li><a href="#0" data-date="09/07/2014">09 Jul</a></li>
+                          <li><a href="#0" data-date="30/08/2014">30 Aug</a></li>
+                          <li><a href="#0" data-date="15/09/2014">15 Sep</a></li>
+                          <li><a href="#0" data-date="01/11/2014">01 Nov</a></li>
+                          <li><a href="#0" data-date="10/12/2014">10 Dec</a></li>
+                          <li><a href="#0" data-date="19/01/2015">29 Jan</a></li>
+                          <li><a href="#0" data-date="03/03/2015">3 Mar</a></li>
+                        </ol>
+
+                        <span class="filling-line" aria-hidden="true"></span>
+                      </div> <!-- .events -->
+                    </div> <!-- .events-wrapper -->
+                      
+                    <ul class="cd-timeline-navigation">
+                      <li><a href="#0" class="prev inactive">Prev</a></li>
+                      <li><a href="#0" class="next">Next</a></li>
+                    </ul> <!-- .cd-timeline-navigation -->
+                  </div> <!-- .timeline -->
+
+                  <div class="events-content">
+                    <ol>
+                      <li class="selected" data-date="16/01/2014">
+                        <h2>Horizontal Timeline</h2>
+                        <em>January 16th, 2014</em>
+                        <p> 
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+                        </p>
+                      </li>
+
+                      <li data-date="28/02/2014">
+                        <h2>Event title here</h2>
+                        <em>February 28th, 2014</em>
+                        <p> 
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+                        </p>
+                      </li>
+
+                      <li data-date="20/04/2014">
+                        <h2>Event title here</h2>
+                        <em>March 20th, 2014</em>
+                        <p> 
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+                        </p>
+                      </li>
+
+                      <li data-date="20/05/2014">
+                        <h2>Event title here</h2>
+                        <em>May 20th, 2014</em>
+                        <p> 
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+                        </p>
+                      </li>
+
+                      <li data-date="09/07/2014">
+                        <h2>Event title here</h2>
+                        <em>July 9th, 2014</em>
+                        <p> 
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+                        </p>
+                      </li>
+
+                      <li data-date="30/08/2014">
+                        <h2>Event title here</h2>
+                        <em>August 30th, 2014</em>
+                        <p> 
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+                        </p>
+                      </li>
+
+                      <li data-date="15/09/2014">
+                        <h2>Event title here</h2>
+                        <em>September 15th, 2014</em>
+                        <p> 
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+                        </p>
+                      </li>
+
+                      <li data-date="01/11/2014">
+                        <h2>Event title here</h2>
+                        <em>November 1st, 2014</em>
+                        <p> 
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+                        </p>
+                      </li>
+
+                      <li data-date="10/12/2014">
+                        <h2>Event title here</h2>
+                        <em>December 10th, 2014</em>
+                        <p> 
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+                        </p>
+                      </li>
+
+                      <li data-date="19/01/2015">
+                        <h2>Event title here</h2>
+                        <em>January 19th, 2015</em>
+                        <p> 
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+                        </p>
+                      </li>
+
+                      <li data-date="03/03/2015">
+                        <h2>Event title here</h2>
+                        <em>March 3rd, 2015</em>
+                        <p> 
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+                        </p>
+                      </li>
+                    </ol>
+                  </div> <!-- .events-content -->
+                </section>
+              </div>
+              <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+              </div>
+          </div>
+         </div>
+        </div>
+   
+    </div>
+  </div>
+  </div>
+
+
+
+
+<!-- Container (Contact Section) -->
+<div id="contact" class="container-fluid">
+  <div id="page-wrapper">
+    <h2 class="text-center">Contact</h2><br>
+    <div class="row">
+      <div class="col-sm-5">
+        <p>Contact us and we'll get back to you within 24 hours.</p>
+        <p><span class="glyphicon glyphicon-map-marker"></span> 204A N Gower St, Kings Cross, London NW1 2LY </p>
+        <p><span class="glyphicon glyphicon-phone"></span> 020 7387 0046</p>
+        <p><span class="glyphicon glyphicon-envelope"></span> myemail@something.com</p>
+      </div>
+
+        
+        <div class="col-sm-7 slideanim text-center">
+            <div class="row">
+              <div class="col-sm-12">
+
+
+
+                <form id="ajax-contact" method="post" action="mailer.php">
+                        <div class="row">
+                            <div class="col-sm-12 form-group">
+                                <div class="field" id="form-messages"></div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-6 form-group">
+                                <div class="field">
+                                    <input class="form-control" for="name" type="text" id="name" name="name" placeholder="Name" required>
+                                </div>
+                            </div>
+        
+                            <div class="col-sm-6 form-group">
+                                <div class="field">
+                                    <input class="form-control" for="email" type="email" id="email" name="email" placeholder="Email" required>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <textarea class="form-control" for="message" id="message" name="message" placeholder="Message" required></textarea>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-sm-12 form-group">
+                                <div class="field">
+                                    <button type="submit">Send</button><br>
+                                </div>
+                            </div>
+                        <div class="row">
+                    
+                </form>
+              </div>   
+            </div>
+
+        </div> 
+      </div>
+    </div>
+  </div>
+
+<div id="googleMap" style="height:400px;width:100%;"></div>
+
+<!-- Add Google Maps -->
+<script src="http://maps.googleapis.com/maps/api/js"></script>
+<script>
+var myCenter = new google.maps.LatLng(51.5273103,-0.1378049);
+
+function initialize() {
+var mapProp = {
+  center:myCenter,
+  zoom:18,
+  scrollwheel:false,
+  draggable:false,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker = new google.maps.Marker({
+  position:myCenter,
+  });
+
+marker.setMap(map);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+
+<footer class="container-fluid text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  <p>Bootstrap Theme Made By <a href="http://www.w3schools.com" title="Visit w3schools">www.w3schools.com</a></p>
+</footer>
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+  
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
+
+<script>
+    $.getJSON('prayerTimes.json', function(data) {
+        var tr;
+        var today = new moment().format("MM/DD/YYYY")
+        console.log(today);
+        for (var i = 0; i < data.length; i++) {
+
+            if(data[i]['Date'] == today) {
+                tr = $('<tr/>');
+                tr.append("<td>" + "Fajr" + "</td>");
+                tr.append("<td>" + data[i]['FajrStart'] + "</td>");
+                tr.append("<td>" + data[i]['FajrPray'] + "</td>");
+                $('table').append(tr);
+                tr = $('<tr/>');
+                tr.append("<td>" + "Dhuhr" + "</td>");
+                tr.append("<td>" + data[i]['DhuhrStart'] + "</td>");
+                tr.append("<td>" + data[i]['DhuhrPray'] + "</td>");
+                $('table').append(tr);
+                tr = $('<tr/>');
+                tr.append("<td>" + "Asr" + "</td>");
+                tr.append("<td>" + data[i]['AsrStart'] + "</td>");
+                tr.append("<td>" + data[i]['AsrPray'] + "</td>");
+                $('table').append(tr);
+                tr = $('<tr/>');
+                tr.append("<td>" + "Maghrib" + "</td>");
+                tr.append("<td>" + data[i]['MaghribStart'] + "</td>");
+                tr.append("<td>" + data[i]['MaghribPray'] + "</td>");
+                $('table').append(tr);
+                tr = $('<tr/>');
+                tr.append("<td>" + "Isha" + "</td>");
+                tr.append("<td>" + data[i]['IshaStart'] + "</td>");
+                tr.append("<td>" + data[i]['IshaPray'] + "</td>");
+                $('table').append(tr);
+            }
+        }
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Bootstrap Theme Company Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="jquery-2.1.0.min.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script type='text/javascript' src='js/moment.min.js'></script>
+  <script type ="text/javascript" src="js/bootstrap.min.js"></script>
+  <script src="app.js"></script>
+  <script src="https://www.google.com/recaptcha/api.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <img src="images/mosque.svg"" class="img-rounded logo" alt="Home width="70" height="53">
+      <a>Shah Jalal Masjid</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#services">SERVICES</a></li>
+        <li><a href="#portfolio">STAFF</a></li>
+        <li><a href="#pricing">PRICING</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<!-- Container (Portfolio Section) -->
+<div id="portfolio" class="container-fluid text-center bg-grey">
+  <h2>Staff</h2><br>
+  <h4>Our staff in Shah Jalal Masjid </h4>
+  <div class="row text-center slideanim">
+    <div class="col-sm-4">
+      <div class="img-responsive thumbnail">
+        <img src="images/im1.jpg" alt="Imam1" width="100%" height="auto">
+        <p><strong>Imam1</strong></p>
+        <p>Yes, we built Paris</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="img-responsive thumbnail">
+        <img src="images/im2.jpg" alt="Imam2" width="100%" height="auto">
+        <p><strong>Imam2</strong></p>
+        <p>We built New York</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="img-responsive thumbnail">
+        <img src="images/im3.jpg" alt="Imam3" width="100%" height="auto">
+        <p><strong>Imam3</strong></p>
+        <p>Yes, San Fran is ours</p>
+      </div>
+    </div>
+  </div><br>
+  
+
+<!-- Container (Contact Section) -->
+<div id="contact" class="container-fluid bg-grey">
+  <div id="page-wrapper">
+    <h1 class="text-center">Contact</h1>
+    <div class="row">
+      <div class="col-sm-5">
+        <p>Contact us and we'll get back to you within 24 hours.</p>
+        <p><span class="glyphicon glyphicon-map-marker"></span> 204A N Gower St, Kings Cross, London NW1 2LY </p>
+        <p><span class="glyphicon glyphicon-phone"></span> 020 7387 0046</p>
+        <p><span class="glyphicon glyphicon-envelope"></span> myemail@something.com</p>
+      </div>
+
+        
+        <div class="col-sm-7 slideanim text-center">
+            <div class="row">
+              <div class="col-sm-12">
+
+
+
+                <form id="ajax-contact" method="post" action="mailer.php">
+                        <div class="row">
+                            <div class="col-sm-12 form-group">
+                                <div class="field" id="form-messages"></div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-6 form-group">
+                                <div class="field">
+                                    <input class="form-control" for="name" type="text" id="name" name="name" placeholder="Name" required>
+                                </div>
+                            </div>
+        
+                            <div class="col-sm-6 form-group">
+                                <div class="field">
+                                    <input class="form-control" for="email" type="email" id="email" name="email" placeholder="Email" required>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <textarea class="form-control" for="message" id="message" name="message" placeholder="Message" required></textarea>
+                        </div>
+                        <br>
+
+                     <!--Captcha code start -->
+                        <img id="captcha" src="library/vender/securimage/securimage_show.php" alt="CAPTCHA Image" />
+                        <a href="#" onclick="document.getElementById('captcha').src = 'library/vender/securimage/securimage_show.php?' + Math.random(); return false" class="btn btn-info btn-sm">Show a Different Image</a><br/>
+                    <div class="form-group" style="margin-top: 10px;">
+                        <input type="text" class="form-control" name="captcha_code" id="captcha_code" placeholder="For security, please enter the code displayed in the box." />
+                        <span class="help-block" style="display: none;">Please enter the code displayed within the image.</span>
+                    </div>
+                     <!--Captcha code end-->
+
+
+                        <div class="row">
+                            <div class="col-sm-12 form-group">
+                                <div class="field">
+                                    <button type="submit">Send</button>
+                                </div>
+                            </div>
+                        <div class="row">
+                    
+                </form>
+              </div>   
+            </div>
+
+        </div> 
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+<div id="googleMap" style="height:400px;width:100%;"></div>
+
+<!-- Add Google Maps -->
+<script src="http://maps.googleapis.com/maps/api/js"></script>
+<script>
+var myCenter = new google.maps.LatLng(51.5273103,-0.1378049);
+
+function initialize() {
+var mapProp = {
+  center:myCenter,
+  zoom:18,
+  scrollwheel:false,
+  draggable:false,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker = new google.maps.Marker({
+  position:myCenter,
+  });
+
+marker.setMap(map);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+
+<footer class="container-fluid text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  <p>Bootstrap Theme Made By <a href="http://www.w3schools.com" title="Visit w3schools">www.w3schools.com</a></p>
+</footer>
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+  
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
+
+<script>
+    $.getJSON('prayerTimes.json', function(data) {
+        var tr;
+        var today = new moment().format("MM/DD/YYYY")
+        console.log(today);
+        for (var i = 0; i < data.length; i++) {
+
+            if(data[i]['Date'] == today) {
+                tr = $('<tr/>');
+                tr.append("<td>" + "Fajr" + "</td>");
+                tr.append("<td>" + data[i]['FajrStart'] + "</td>");
+                tr.append("<td>" + data[i]['FajrPray'] + "</td>");
+                $('table').append(tr);
+                tr = $('<tr/>');
+                tr.append("<td>" + "Dhuhr" + "</td>");
+                tr.append("<td>" + data[i]['DhuhrStart'] + "</td>");
+                tr.append("<td>" + data[i]['DhuhrPray'] + "</td>");
+                $('table').append(tr);
+                tr = $('<tr/>');
+                tr.append("<td>" + "Asr" + "</td>");
+                tr.append("<td>" + data[i]['AsrStart'] + "</td>");
+                tr.append("<td>" + data[i]['AsrPray'] + "</td>");
+                $('table').append(tr);
+                tr = $('<tr/>');
+                tr.append("<td>" + "Maghrib" + "</td>");
+                tr.append("<td>" + data[i]['MaghribStart'] + "</td>");
+                tr.append("<td>" + data[i]['MaghribPray'] + "</td>");
+                $('table').append(tr);
+                tr = $('<tr/>');
+                tr.append("<td>" + "Isha" + "</td>");
+                tr.append("<td>" + data[i]['IshaStart'] + "</td>");
+                tr.append("<td>" + data[i]['IshaPray'] + "</td>");
+                $('table').append(tr);
+            }
+        }
+    });
+</script>
+
+</body>
+</html>

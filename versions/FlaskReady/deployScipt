@@ -1,0 +1,4 @@
+cd /Users/kawsarnoor/Documents/Computer\ Programming/Websites/shahjalal/versions/FlaskReady
+export FLASK_APP=flask_app.py
+export FLASK_DEBUG=1
+flask run
